@@ -138,7 +138,7 @@ export default function HowItWorksSection() {
                   <span className="rounded-full bg-[var(--secondary)]/20 px-3 py-1 font-semibold uppercase tracking-[0.18em] text-[var(--primary)]">
                     Clean Craft - Power Wash
                   </span>
-                  <span>Processo rápido, claro e sem surpresas.</span>
+                  <span>Rápido, claro e sem surpresas.</span>
                 </div>
               </div>
             </div>
