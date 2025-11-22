@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  CalendarDays,
-  Droplets,
-  Home,
-  Info,
-  Menu,
-  Phone,
-  X,
-} from "lucide-react";
+import { Droplets, Home, Info, Menu, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -17,7 +9,6 @@ const navItems = [
   { id: "hero", label: "Início", icon: Home },
   { id: "services", label: "Serviços", icon: Droplets },
   { id: "how-it-works", label: "Como funciona", icon: Info },
-  { id: "gallery", label: "Resultados", icon: CalendarDays },
   { id: "contact", label: "Contacto", icon: Phone },
 ];
 
