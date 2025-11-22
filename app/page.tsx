@@ -1,5 +1,7 @@
 import { Footer } from "@/components/Footer";
+import HowItWorksSection from "@/components/HowItWorksSection";
 import { Navbar } from "@/components/Navbar";
+import ServicesSection from "@/components/ServicesSection";
 import { Droplets, Sparkles } from "lucide-react";
 import Image from "next/image";
 
@@ -108,6 +110,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <ServicesSection />
+        <HowItWorksSection />
       </main>
 
       <Footer />
