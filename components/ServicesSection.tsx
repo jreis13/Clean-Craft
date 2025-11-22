@@ -6,7 +6,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="w-full p-24 bg-[var(--skyBlue)] text-[var(--deep)]"
+      className="w-full py-24 bg-[var(--skyBlue)] text-[var(--deep)]"
     >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-white">

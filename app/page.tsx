@@ -14,7 +14,7 @@ export default function HomePage() {
       <main>
         <section
           id="hero"
-          className="relative flex min-h-[85vh] items-center overflow-hidden bg-gradient-to-b from-[var(--primary)] to-[var(--skyBlue)] pt-20 text-white"
+          className="relative flex min-h-[85vh] items-center overflow-hidden bg-gradient-to-b from-[var(--primary)] to-[var(--skyBlue)] py-24 text-white"
         >
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:px-8">
             <div className="space-y-6">

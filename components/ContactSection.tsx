@@ -40,7 +40,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="w-full py-20 bg-gradient-to-b from-[var(--skyBlue)] to-[var(--primary)]"
+      className="w-full py-24 bg-gradient-to-b from-[var(--skyBlue)] to-[var(--primary)]"
     >
       <div className="max-w-6xl mx-auto px-4 flex flex-col gap-10">
         <div className="text-center max-w-3xl mx-auto">
