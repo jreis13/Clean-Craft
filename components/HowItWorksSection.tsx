@@ -157,7 +157,7 @@ export default function HowItWorksSection() {
                     onClick={() => setActiveIndex(index)}
                     className={`flex flex-col items-center justify-center rounded-2xl border px-2 py-3 text-xs transition hover:cursor-pointer ${
                       isActive
-                        ? "border-[var(--secondary)] bg-[var(--secondary)]/15 text-[var(--primary)]"
+                        ? "border-[var(--secondary)] bg-[var(--secondary)]/15 text-white"
                         : "border-[var(--primary)]/15 bg-white/70 text-[var(--deep)]/70 hover:bg-white"
                     }`}
                   >
@@ -173,9 +173,7 @@ export default function HowItWorksSection() {
                     <Icon
                       size={16}
                       className={`mt-1 ${
-                        isActive
-                          ? "text-[var(--primary)]"
-                          : "text-[var(--primary)]/80"
+                        isActive ? "text-white" : "text-[var(--primary)]/80"
                       }`}
                     />
                     <span className="mt-1 text-[10px] leading-tight text-center">
