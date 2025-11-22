@@ -13,7 +13,7 @@ export default function ServicesSection() {
           Serviços de Limpeza Profissional
         </h2>
 
-        <p className="text-center text-[var(--deep)]/70 max-w-2xl mx-auto mb-12 text-lg">
+        <p className="text-center text-white/80 max-w-2xl mx-auto mb-12 text-lg">
           Limpeza de alta pressão para fachadas, calçadas, muros, pátios,
           garagens, piscinas e muito mais. Qualidade visível na hora.
         </p>
