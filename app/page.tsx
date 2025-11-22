@@ -1,3 +1,4 @@
+import ContactSection from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import { Navbar } from "@/components/Navbar";
@@ -112,6 +113,7 @@ export default function HomePage() {
         </section>
         <ServicesSection />
         <HowItWorksSection />
+        <ContactSection />
       </main>
 
       <Footer />
