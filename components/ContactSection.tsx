@@ -40,11 +40,11 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="w-full py-24 bg-gradient-to-b from-[var(--skyBlue)] to-[var(--primary)]"
+      className="w-full py-24 bg-linear-to-b from-(--skyBlue) to-(--primary)"
     >
       <div className="max-w-6xl mx-auto px-4 flex flex-col gap-10">
         <div className="text-center max-w-3xl mx-auto">
-          <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[var(--secondary)] mb-2">
+          <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-(--secondary) mb-2">
             Orçamento Gratuito
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3 text-white">
@@ -59,7 +59,7 @@ export default function ContactSection() {
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] items-stretch">
           <div className="flex flex-col justify-between gap-6">
             <div className="rounded-3xl bg-white/10 border border-white/15 backdrop-blur px-6 py-6 text-white shadow-lg">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[var(--secondary)] mb-2">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-(--secondary) mb-2">
                 Contacto direto
               </p>
               <h3 className="text-xl font-semibold mb-3">
@@ -75,7 +75,7 @@ export default function ContactSection() {
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--secondary)] px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-[var(--primary)] shadow-md hover:bg-[color:rgba(110,214,228,0.9)] transition"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-(--secondary) px-5 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary) shadow-md hover:bg-[rgba(110,214,228,0.9)] transition"
                 >
                   <MessageCircle size={18} />
                   Falar por WhatsApp
@@ -99,7 +99,7 @@ export default function ContactSection() {
             </div>
 
             <div className="hidden lg:block rounded-3xl bg-white/10 border border-white/10 px-6 py-5 text-xs text-white/80">
-              <p className="font-semibold mb-1 text-[var(--secondary)]">
+              <p className="font-semibold mb-1 text-(--secondary)">
                 Dica para um orçamento rápido
               </p>
               <ul className="list-disc list-inside space-y-1">
@@ -111,54 +111,45 @@ export default function ContactSection() {
           </div>
 
           <div className="rounded-3xl bg-white shadow-xl p-6 sm:p-8">
-            <h3 className="text-lg sm:text-xl font-semibold mb-4 text-[var(--deep)]">
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 text-(--deep)">
               Formulário de pedido de orçamento
             </h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="flex flex-col gap-1 text-sm">
-                  <label
-                    htmlFor="name"
-                    className="font-medium text-[var(--deep)]"
-                  >
+                  <label htmlFor="name" className="font-medium text-(--deep)">
                     Nome
                   </label>
                   <input
                     id="name"
                     name="name"
                     required
-                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--secondary)]/60"
+                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-(--primary) focus:ring-2 focus:ring-(--secondary)/60"
                     placeholder="Nome para contacto..."
                   />
                 </div>
                 <div className="flex flex-col gap-1 text-sm">
-                  <label
-                    htmlFor="phone"
-                    className="font-medium text-[var(--deep)]"
-                  >
+                  <label htmlFor="phone" className="font-medium text-(--deep)">
                     Telemóvel
                   </label>
                   <input
                     id="phone"
                     name="phone"
-                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--secondary)]/60"
+                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-(--primary) focus:ring-2 focus:ring-(--secondary)/60"
                     placeholder="+351..."
                   />
                 </div>
               </div>
 
               <div className="flex flex-col gap-1 text-sm">
-                <label
-                  htmlFor="email"
-                  className="font-medium text-[var(--deep)]"
-                >
+                <label htmlFor="email" className="font-medium text-(--deep)">
                   Email
                 </label>
                 <input
                   id="email"
                   name="email"
                   type="email"
-                  className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--secondary)]/60"
+                  className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-(--primary) focus:ring-2 focus:ring-(--secondary)/60"
                   placeholder="Opcional, para envio do orçamento"
                 />
               </div>
@@ -167,14 +158,14 @@ export default function ContactSection() {
                 <div className="flex flex-col gap-1 text-sm">
                   <label
                     htmlFor="service"
-                    className="font-medium text-[var(--deep)]"
+                    className="font-medium text-(--deep)"
                   >
                     Tipo de serviço
                   </label>
                   <select
                     id="service"
                     name="service"
-                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--secondary)]/60 bg-white cursor-pointer"
+                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-(--primary) focus:ring-2 focus:ring-(--secondary)/60 bg-white cursor-pointer"
                     defaultValue=""
                   >
                     <option value="" disabled>
@@ -189,33 +180,27 @@ export default function ContactSection() {
                   </select>
                 </div>
                 <div className="flex flex-col gap-1 text-sm">
-                  <label
-                    htmlFor="area"
-                    className="font-medium text-[var(--deep)]"
-                  >
+                  <label htmlFor="area" className="font-medium text-(--deep)">
                     Área aproximada (m²)
                   </label>
                   <input
                     id="area"
                     name="area"
-                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--secondary)]/60"
+                    className="h-10 rounded-2xl border border-slate-200 px-3 text-sm outline-none transition focus:border-(--primary) focus:ring-2 focus:ring-(--secondary)/60"
                     placeholder="Ex.: 80"
                   />
                 </div>
               </div>
 
               <div className="flex flex-col gap-1 text-sm">
-                <label
-                  htmlFor="message"
-                  className="font-medium text-[var(--deep)]"
-                >
+                <label htmlFor="message" className="font-medium text-(--deep)">
                   Notas adicionais
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
-                  className="rounded-2xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--primary)] focus:ring-2 focus:ring-[var(--secondary)]/60 resize-none"
+                  className="rounded-2xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-(--primary) focus:ring-2 focus:ring-(--secondary)/60 resize-none"
                   placeholder="Ex.: tipo de sujidade, acesso, etc."
                 />
               </div>
@@ -224,7 +209,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={sending}
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[var(--primary)] px-6 py-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-[var(--primaryDark)] disabled:opacity-70 hover:cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2 rounded-2xl bg-(--primary) px-6 py-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-(--primaryDark) disabled:opacity-70 hover:cursor-pointer"
                 >
                   <MessageCircle size={16} />
                   {sending ? "A abrir WhatsApp..." : "Enviar por WhatsApp"}

@@ -26,8 +26,8 @@ export function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-40 transition ${
         scrolled
-          ? "bg-[var(--primary)] bg-opacity-95 backdrop-blur shadow-lg"
-          : "bg-gradient-to-b from-[var(--primary)] to-transparent"
+          ? "bg-(--primary) bg-opacity-95 backdrop-blur shadow-lg"
+          : "bg-linear-to-b from-(--primary) to-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
@@ -60,7 +60,7 @@ export function Navbar() {
 
         <a
           href="#contact"
-          className="ml-4 hidden rounded-full bg-[var(--secondary)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--primary)] shadow-md sm:inline-flex"
+          className="ml-4 hidden rounded-full bg-(--secondary) px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-(--primary) shadow-md sm:inline-flex"
         >
           Orçamento gratuito
         </a>
@@ -74,7 +74,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-[var(--primary)] bg-opacity-95 px-4 py-3 text-sm text-white sm:hidden">
+        <div className="border-t border-white/10 bg-(--primary) bg-opacity-95 px-4 py-3 text-sm text-white sm:hidden">
           <div className="mx-auto flex max-w-6xl flex-col gap-1">
             {navItems.map((item) => {
               const Icon = item.icon;
@@ -93,7 +93,7 @@ export function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center justify-center rounded-lg bg-[var(--secondary)] px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--primary)]"
+              className="mt-2 inline-flex items-center justify-center rounded-lg bg-(--secondary) px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-(--primary)"
             >
               Orçamento gratuito
             </a>
