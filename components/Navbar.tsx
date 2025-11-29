@@ -60,7 +60,7 @@ export function Navbar() {
 
         <a
           href="#contact"
-          className="inline-flex items-center justify-center rounded-2xl bg-(--secondary) px-6 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-(--primary) shadow-md transition hover:bg-(--skyBlue)"
+          className="ml-4 hidden rounded-full bg-(--secondary) px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-(--primary) shadow-md sm:inline-flex"
         >
           Orçamento gratuito
         </a>
