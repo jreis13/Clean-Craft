@@ -15,8 +15,7 @@ export function Footer() {
           <span>+351 960 491 588</span>
           <span className="hidden h-3 w-px bg-slate-300 sm:inline-block" />
           <span className="text-white/80">
-            Limpeza de fachadas, entradas, pátios, piscinas, cercas, muros e
-            grades.
+            Limpeza de fachadas, calçadas, pátios, garagens e piscinas.
           </span>
         </div>
       </div>
