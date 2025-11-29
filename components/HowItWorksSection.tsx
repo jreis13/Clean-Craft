@@ -93,11 +93,8 @@ export default function HowItWorksSection() {
             Como Funciona
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3 text-white">
-            Passo a passo da limpeza Clean Craft
+            Cada etapa explicada ao detalhe
           </h2>
-          <p className="text-sm sm:text-base text-white/80">
-            Transparência total: cada etapa da limpeza explicada ao detalhe.
-          </p>
         </div>
 
         <div className="flex flex-col gap-8 items-center">

@@ -48,11 +48,11 @@ export default function ContactSection() {
             Orçamento Gratuito
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-3 text-white">
-            Marque já a sua lavagem com a Clean Craft
+            Marque já a sua lavagem
           </h2>
           <p className="text-sm sm:text-base text-white/80">
-            Envie o seu pedido em menos de um minuto. Respondemos normalmente no
-            mesmo dia com um orçamento claro, sem compromisso.
+            Peça o seu orçamento em menos de um minuto. Responderemos dentro de
+            24h com um orçamento claro, sem compromisso.
           </p>
         </div>
 
